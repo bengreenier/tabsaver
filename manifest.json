@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "bengreenier-tabsaver",
+  "version": "1.3",
+  "description": "A simple tab saver",
+  "homepage_url": "https://github.com/bengreenier/tabsaver",
+  "icons": {
+    "48": "icons/iconmonstr-bookmark-32-48.png",
+    "96": "icons/iconmonstr-bookmark-32-96.png"
+  },
+
+  "permissions": ["tabs", "bookmarks", "idle"],
+
+  "browser_action": {
+    "default_icon": "icons/iconmonstr-bookmark-32-48.png",
+    "default_title": "Force Save Tabs"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{ec76ae3e-1ec9-4fba-9980-e78d1b911326}",
+      "strict_min_version": "55.0"
+    }
+  }
+}
